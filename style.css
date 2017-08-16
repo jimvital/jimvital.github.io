@@ -1,0 +1,13 @@
+body{
+	background-image: url("bg.JPG"); 
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+div{
+	float:center;
+	padding-left: 400px;
+}
+h1{
+	color: #ffffff;
+}
+
