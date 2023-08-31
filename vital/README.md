@@ -1,1 +1,0 @@
-# jimvital.github.io
