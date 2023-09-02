@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+import useFullPageScrollEffect from "./hooks/useFullPageScrollEffect";
+
+import { Section } from "./components";
+
+const App: React.FC = () => {
+  useFullPageScrollEffect();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main" className="scroll-container">
+      <Section anchor="intro" style={{ backgroundColor: "#DCADAD" }}>
+        Section 1
+      </Section>
+      <Section anchor="about" style={{ backgroundColor: "#555594" }}>
+        Section 2
+      </Section>
+      <Section anchor="achievements" style={{ backgroundColor: "#5992AD" }}>
+        Section 3
+      </Section>
+      <Section anchor="contact" style={{ backgroundColor: "yellow" }}>
+        Section 4
+      </Section>
     </div>
   );
-}
+};
 
 export default App;
