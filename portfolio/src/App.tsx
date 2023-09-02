@@ -1,28 +1,31 @@
 import React from "react";
+import { Box } from "@chakra-ui/react";
+import { useMediaQuery } from "usehooks-ts";
 import "./App.css";
 
 import useFullPageScrollEffect from "./hooks/useFullPageScrollEffect";
 
-import { Section } from "./components";
+import { MobileDrawer } from "./components";
+import { Intro, About, Accomplishments, Contact } from "./sections";
 
 const App: React.FC = () => {
-  useFullPageScrollEffect();
+  const isDesktop = useMediaQuery("(min-width: 1360px)");
+
+  useFullPageScrollEffect(isDesktop);
 
   return (
-    <div id="main" className="scroll-container">
-      <Section anchor="intro" style={{ backgroundColor: "#DCADAD" }}>
-        Section 1
-      </Section>
-      <Section anchor="about" style={{ backgroundColor: "#555594" }}>
-        Section 2
-      </Section>
-      <Section anchor="achievements" style={{ backgroundColor: "#5992AD" }}>
-        Section 3
-      </Section>
-      <Section anchor="contact" style={{ backgroundColor: "yellow" }}>
-        Section 4
-      </Section>
-    </div>
+    <>
+      {!isDesktop && <MobileDrawer />}
+      <Box
+        id="main"
+        className={isDesktop ? "full-scroll-container" : "scroll-container"}
+      >
+        <Intro />
+        <About />
+        <Accomplishments />
+        <Contact />
+      </Box>
+    </>
   );
 };
 

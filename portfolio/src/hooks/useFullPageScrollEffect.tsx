@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 type TFullPageScrollHook = (
+  enable: boolean,
   mainElement?: string,
   displayDots?: boolean,
   dotsPosition?: string,
@@ -9,6 +10,7 @@ type TFullPageScrollHook = (
 ) => void;
 
 const useFullPageScrollEffect: TFullPageScrollHook = (
+  enable,
   mainElement = "main",
   displayDots = true,
   dotsPosition = "right",
@@ -16,25 +18,34 @@ const useFullPageScrollEffect: TFullPageScrollHook = (
   animateFunction = "ease"
 ) => {
   useEffect(() => {
-    const script = document.createElement("script");
+    if (enable) {
+      const script = document.createElement("script");
 
-    script.type = "text/javascript";
-    script.innerHTML = `
-      new fullScroll({
-        mainElement: "${mainElement}",
-        displayDots: ${displayDots},
-        dotsPosition: "${dotsPosition}",
-        animateTime: ${animateTime},
-        animateFunction: "${animateFunction}",
-      });
-    `;
+      script.type = "text/javascript";
+      script.innerHTML = `
+        new fullScroll({
+          mainElement: "${mainElement}",
+          displayDots: ${displayDots},
+          dotsPosition: "${dotsPosition}",
+          animateTime: ${animateTime},
+          animateFunction: "${animateFunction}",
+        });
+      `;
 
-    document.body.appendChild(script);
+      document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, [mainElement, displayDots, dotsPosition, animateTime, animateFunction]);
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
+  }, [
+    enable,
+    mainElement,
+    displayDots,
+    dotsPosition,
+    animateTime,
+    animateFunction,
+  ]);
 };
 
 export default useFullPageScrollEffect;
