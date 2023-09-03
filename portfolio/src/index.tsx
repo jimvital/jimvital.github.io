@@ -6,7 +6,6 @@ import "./index.css";
 import App from "./App";
 
 const theme = extendTheme({
-  config: { initialColorMode: "dark", useSystemColorMode: false },
   fonts: { heading: "Oswald", body: "Source Sans 3" },
 });
 

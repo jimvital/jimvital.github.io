@@ -19,7 +19,7 @@ import samsungLogo from "../../assets/samsung.png";
 
 const Samsung: React.FC = () => {
   return (
-    <Card maxW="300px">
+    <Card maxW="300px" background="white" boxShadow="base">
       <CardBody>
         <Center
           width="100%"
@@ -28,7 +28,7 @@ const Samsung: React.FC = () => {
         >
           <Image src={samsungLogo} alt="Samsung" boxSize="100px" />
         </Center>
-        <Stack mt="6" spacing="3">
+        <Stack mt="6" spacing="3" color="blackAlpha.800">
           <Heading size="md">Local Business Contribution</Heading>
           <Text fontSize="sm">
             • Contributed to various side projects within Samsung R&D Institute
@@ -36,15 +36,21 @@ const Samsung: React.FC = () => {
           </Text>
           <Text fontSize="sm">
             • Developed management systems and design tools using similar
-            frontend technologies.
+            frontend technologies{" "}
+            <Text fontSize="sm" as="i">
+              (see "Resume" for more details)
+            </Text>
+            .
           </Text>
         </Stack>
       </CardBody>
       <Divider />
       <CardFooter>
         <Tag variant="subtle" size="md" width="max-content">
-          <TagLeftIcon boxSize={5} as={BiSolidLock} />
-          <TagLabel>Protected by company policy</TagLabel>
+          <TagLeftIcon boxSize={5} as={BiSolidLock} color="blackAlpha.900" />
+          <TagLabel color="blackAlpha.900">
+            Protected by company policy
+          </TagLabel>
         </Tag>
       </CardFooter>
     </Card>

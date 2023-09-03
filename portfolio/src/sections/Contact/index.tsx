@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
           </Link>
         ),
       },
-      { id: "phone", icon: MdSmartphone, info: "63 920 496 4925" },
+      { id: "phone", icon: MdSmartphone, info: "(+63) 920 496 4925" },
       {
         id: "linkedin",
         icon: FaLinkedin,

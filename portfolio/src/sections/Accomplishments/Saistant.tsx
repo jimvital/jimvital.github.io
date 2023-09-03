@@ -19,12 +19,12 @@ import saistantLogo from "../../assets/saistant.png";
 
 const Saistant: React.FC = () => {
   return (
-    <Card maxW="300px">
+    <Card maxW="300px" background="white" boxShadow="base">
       <CardBody>
         <Center width="100%" background="#8E1538" borderRadius="lg">
           <Image src={saistantLogo} alt="Saistant" boxSize="100px" />
         </Center>
-        <Stack mt="6" spacing="3">
+        <Stack mt="6" spacing="3" color="blackAlpha.800">
           <Heading size="md">SAIStant</Heading>
           <Text fontSize="sm">
             • Created a user interface that integrated artificial intelligence
@@ -49,9 +49,8 @@ const Saistant: React.FC = () => {
           >
             <Button
               leftIcon={<GoVideo size="1.5em" />}
-              background="#34a0a4"
-              color="white"
-              variant="solid"
+              color="#34a0a4"
+              variant="ghost"
               size="sm"
             >
               Demo

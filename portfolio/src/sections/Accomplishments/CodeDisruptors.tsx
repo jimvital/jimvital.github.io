@@ -18,12 +18,12 @@ import cdiLogo from "../../assets/cdi.jpg";
 
 const CodeDisruptors: React.FC = () => {
   return (
-    <Card maxW="300px">
+    <Card maxW="300px" background="white" boxShadow="base">
       <CardBody>
         <Center width="100%" background="black" borderRadius="lg">
           <Image src={cdiLogo} alt="CDI" boxSize="100px" />
         </Center>
-        <Stack mt="6" spacing="3">
+        <Stack mt="6" spacing="3" color="blackAlpha.800">
           <Heading size="md">Internship</Heading>
           <Text fontSize="sm">
             • Developed the user interface for the company's e-commerce
@@ -46,9 +46,8 @@ const CodeDisruptors: React.FC = () => {
         >
           <Button
             leftIcon={<BsFileImageFill size="1.5em" />}
-            background="#34a0a4"
-            color="white"
-            variant="solid"
+            color="#34a0a4"
+            variant="ghost"
             size="sm"
           >
             Documentation

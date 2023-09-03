@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   height: calc(100vh - 2.5em);
-  overflow-y: scroll;
+  overflow: overlay;
 
   section {
     width: 100%;

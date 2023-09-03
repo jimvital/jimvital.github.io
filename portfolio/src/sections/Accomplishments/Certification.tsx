@@ -18,7 +18,7 @@ import openEdgLogo from "../../assets/open-edg.png";
 
 const Certification: React.FC = () => {
   return (
-    <Card maxW="300px">
+    <Card maxW="300px" background="white" boxShadow="base">
       <CardBody>
         <Center
           width="100%"
@@ -28,7 +28,7 @@ const Certification: React.FC = () => {
         >
           <Image src={openEdgLogo} alt="OpenEDG" boxSize="100px" />
         </Center>
-        <Stack mt="6" spacing="3">
+        <Stack mt="6" spacing="3" color="blackAlpha.800">
           <Heading size="md">Certification</Heading>
           <Text fontSize="sm">
             • Became a JSE – Certified Entry-Level JavaScript Programmer.
@@ -44,9 +44,8 @@ const Certification: React.FC = () => {
         <Link href="https://verify.openedg.org/?id=01Ti.y6De.dvep" isExternal>
           <Button
             leftIcon={<FaCertificate size="1.5em" />}
-            background="#34a0a4"
-            color="white"
-            variant="solid"
+            color="#34a0a4"
+            variant="ghost"
             size="sm"
           >
             Verification

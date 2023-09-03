@@ -72,35 +72,35 @@ const TechStack: React.FC = () => {
         <Text fontWeight="bold" color="#34a0a4">
           FRONTEND
         </Text>
-        <BsCircleFill size="0.75em" />
+        <BsCircleFill size="0.75em" color="#4A5568" />
         {renderTags(FrontendTags)}
       </Flex>
       <Flex gap={4} wrap="wrap" alignItems="center">
         <Text fontWeight="bold" color="#34a0a4">
           LANGUAGES
         </Text>
-        <BsCircleFill size="0.75em" />
+        <BsCircleFill size="0.75em" color="#4A5568" />
         {renderTags(LanguageTags)}
       </Flex>
       <Flex gap={4} wrap="wrap" alignItems="center">
         <Text fontWeight="bold" color="#34a0a4">
           FRAMEWORKS
         </Text>
-        <BsCircleFill size="0.75em" />
+        <BsCircleFill size="0.75em" color="#4A5568" />
         {renderTags(FrameworkTags)}
       </Flex>
       <Flex gap={4} wrap="wrap" alignItems="center">
         <Text fontWeight="bold" color="#34a0a4">
           TOOLS
         </Text>
-        <BsCircleFill size="0.75em" />
+        <BsCircleFill size="0.75em" color="#4A5568" />
         {renderTags(ToolTags)}
       </Flex>
       <Flex gap={4} wrap="wrap" alignItems="center">
         <Text fontWeight="bold" color="#34a0a4">
           BACKEND
         </Text>
-        <BsCircleFill size="0.75em" />
+        <BsCircleFill size="0.75em" color="#4A5568" />
         {renderTags(BackendTags)}
       </Flex>
     </Stack>
