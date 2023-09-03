@@ -67,7 +67,7 @@ const TechStack: React.FC = () => {
     ));
 
   return (
-    <Stack>
+    <Stack spacing={3}>
       <Flex gap={4} wrap="wrap" alignItems="center">
         <Text fontWeight="bold" color="#34a0a4">
           FRONTEND

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Button,
   Drawer,
@@ -17,13 +17,13 @@ interface IDrawer {}
 
 const MobileDrawer: React.FC<IDrawer> = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef(null);
+  const buttonRef = useRef(null);
 
   return (
     <>
       <Button
         position="static"
-        ref={btnRef}
+        ref={buttonRef}
         onClick={onOpen}
         variant="unstyled"
         padding={3}
@@ -34,7 +34,7 @@ const MobileDrawer: React.FC<IDrawer> = () => {
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
-        finalFocusRef={btnRef}
+        finalFocusRef={buttonRef}
       >
         <DrawerOverlay />
         <DrawerContent>
