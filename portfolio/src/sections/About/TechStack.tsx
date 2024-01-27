@@ -22,6 +22,7 @@ import {
 import {
   SiJest,
   SiNextdotjs,
+  SiPerforce,
   SiRedux,
   SiRobotframework,
   SiTypescript,
@@ -55,6 +56,7 @@ const FrameworkTags = [
 const ToolTags = [
   { icon: FaGitAlt, label: "Git" },
   { icon: FaJira, label: "Jira" },
+  { icon: SiPerforce, label: "Perforce" },
 ];
 
 const TechStack: React.FC = () => {
