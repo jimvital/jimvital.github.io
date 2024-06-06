@@ -28,7 +28,7 @@ const Intro: React.FC = () => {
             color="#00a8e8"
             textAlign="center"
           >
-            Software Engineer
+            Software Engineer | JavaScript/React Developer
           </Text>
         </Stack>
       </Center>

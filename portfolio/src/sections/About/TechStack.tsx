@@ -21,10 +21,14 @@ import {
 } from "react-icons/fa";
 import {
   SiJest,
+  SiMongodb,
+  SiNestjs,
   SiNextdotjs,
   SiPerforce,
   SiRedux,
   SiRobotframework,
+  SiTailwindcss,
+  SiTwilio,
   SiTypescript,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
@@ -38,9 +42,14 @@ const FrontendTags = [
   { icon: SiRedux, label: "Redux" },
   { icon: TbApi, label: "REST" },
   { icon: SiNextdotjs, label: "NextJS" },
+  { icon: SiTailwindcss, label: "Tailwind CSS" },
 ];
 
-const BackendTags = [{ icon: FaNodeJs, label: "NodeJS" }];
+const BackendTags = [
+  { icon: FaNodeJs, label: "NodeJS" },
+  { icon: SiNestjs, label: "NestJS" },
+  { icon: SiMongodb, label: "MongoDB" },
+];
 
 const LanguageTags = [
   { icon: DiJavascript, label: "JavaScript" },
@@ -57,6 +66,7 @@ const ToolTags = [
   { icon: FaGitAlt, label: "Git" },
   { icon: FaJira, label: "Jira" },
   { icon: SiPerforce, label: "Perforce" },
+  { icon: SiTwilio, label: "SendGrid" },
 ];
 
 const TechStack: React.FC = () => {

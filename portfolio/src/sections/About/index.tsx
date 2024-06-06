@@ -55,8 +55,9 @@ const About: React.FC = () => {
               Philippines Los Baños.
             </Text>
             <Text color="white">
-              Eager to develop on the front-end, as part of dedication to making
-              web technologies as both appealing and convenient to users.
+              Eager to develop at a full-stack capacity, as part of dedication
+              to making web technologies as both appealing and convenient to
+              users.
             </Text>
             <Text color="white">
               Using coding and testing experience in this field to contribute in
