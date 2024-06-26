@@ -8,7 +8,7 @@ import { Section } from "../../components";
 import Saistant from "./Saistant";
 import CodeDisruptors from "./CodeDisruptors";
 import Samsung from "./Samsung";
-import Certification from "./Certification";
+import Pilikola from "./Pilikola";
 
 const Accomplishments: React.FC = () => {
   const isDesktop = useMediaQuery("(min-width: 1360px)");
@@ -26,8 +26,8 @@ const Accomplishments: React.FC = () => {
         <SimpleGrid minChildWidth="300px" gap={4}>
           <Saistant />
           <CodeDisruptors />
-          <Certification />
           <Samsung />
+          <Pilikola />
         </SimpleGrid>
       </Stack>
     </Section>
