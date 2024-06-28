@@ -24,12 +24,12 @@ import {
 } from "react-icons/fa";
 import {
   SiBitbucket,
+  SiFirebase,
   SiGraphql,
   SiJest,
   SiMongodb,
   SiNestjs,
   SiNextdotjs,
-  SiNotion,
   SiPerforce,
   SiRedux,
   SiRobotframework,
@@ -76,7 +76,6 @@ const ToolTags = [
   { icon: FaGitAlt, label: "Git" },
   { icon: SiBitbucket, label: "Bitbucket" },
   { icon: FaJira, label: "Jira" },
-  { icon: SiNotion, label: "Notion" },
   { icon: SiPerforce, label: "Perforce" },
   { icon: SiTwilio, label: "Twilio SendGrid" },
   { icon: FaNpm, label: "NPM" },
@@ -86,6 +85,7 @@ const ToolTags = [
 
 const ServiceTags = [
   { icon: FaAws, label: "AWS (Cognito, S3, Lambda, Amplify, AppSync)" },
+  { icon: SiFirebase, label: "Firebase" },
 ];
 
 const TechStack: React.FC = () => {
