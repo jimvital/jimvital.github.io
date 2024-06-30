@@ -84,7 +84,10 @@ const ToolTags = [
 ];
 
 const ServiceTags = [
-  { icon: FaAws, label: "AWS (Cognito, S3, Lambda, Amplify, AppSync)" },
+  {
+    icon: FaAws,
+    label: "AWS (Cognito, S3, Lambda, Amplify, AppSync, DynamoDB)",
+  },
   { icon: SiFirebase, label: "Firebase" },
 ];
 
